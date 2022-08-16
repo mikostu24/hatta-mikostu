@@ -43,7 +43,6 @@ const PostLayout = ({data}) => {
         <div>{data.datoCmsArticle.paragraph.map(item => {
           const itemKey = Object.keys(item)[1];
           
-          console.log(itemKey);
           switch (itemKey) {
             case 'paragraphContent':
               return <p key={item.id}>{item[itemKey]}</p>;
